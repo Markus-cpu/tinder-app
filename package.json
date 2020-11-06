@@ -1,0 +1,24 @@
+{
+  "name": "tinder-backend",
+  "version": "1.0.0",
+  "description": "node, express, mongoDB, react",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon server.js",
+    "start": "node server.js",
+    "tinder-app": "npm run start --prefix tinder-app",
+    "dev": "concurrently \"npm run server\" \"npm run tinder-app\""
+  },
+  "author": "Markus-cpu <markbass82@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
